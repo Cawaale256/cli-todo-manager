@@ -20,3 +20,20 @@ class TaskList:
             self.tail.next = new_task
             new_task.prev = self.tail
             self.tail = new_task
+
+    # Method to delete a task by title
+    def delete_task(self, title):
+        current = self.head
+        while current:
+            if current.title == current
+                if current.prev:
+                    current.prev.next = current.next
+                else:
+                    self.head = current.next
+                if current.next:
+                    current.next.prev = current.prev
+                else:
+                    self.tail = current.prev
+                return f"Task '{title}' deleted."    
+            current = current.next
+        return f"Task '{title}' not found."
