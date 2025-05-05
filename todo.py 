@@ -1,0 +1,17 @@
+"""
+todo.py - CLI-Based To-Do List Manager
+
+Description:
+Main CLI program for managing tasks using a doubly linked list.
+Supports adding, deleting, sorting tasks, and undo/redo actions.
+
+Usage:
+Run in the terminal and enter commands to manage tasks.
+
+Dependencies:
+- linked_list.py (Task storage)
+- sorting.py (Sorting algorithms)
+- undo_redo.py (Undo/redo actions)
+"""
+
+
