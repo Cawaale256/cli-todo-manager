@@ -37,3 +37,13 @@ class TaskList:
                 return f"Task '{title}' deleted."    
             current = current.next
         return f"Task '{title}' not found."
+
+    # Method to display all tasks in the list
+    def display_tasks(self):
+        # Start from the head of the list
+        current = self.head
+        while current:
+            # Print the task details (priority, title, deadline)
+            print(f"[{current.priority}] {current.title} - Deadline: {current.deadline}")
+            # Move to the next task in the list
+            current = current.next
