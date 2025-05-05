@@ -47,3 +47,4 @@ class TaskList:
             print(f"[{current.priority}] {current.title} - Deadline: {current.deadline}")
             # Move to the next task in the list
             current = current.next
+            
