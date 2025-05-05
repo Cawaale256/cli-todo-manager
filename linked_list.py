@@ -25,7 +25,8 @@ class TaskList:
     def delete_task(self, title):
         current = self.head
         while current:
-            if current.title == current
+            print(f"Checking: {current.title}")  
+            if current.title == title:
                 if current.prev:
                     current.prev.next = current.next
                 else:
